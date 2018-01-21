@@ -12,6 +12,7 @@ Please go to English Section if you don't read Japanese.
 
 https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true
 
+元ネタではJavascriptが対象ですが、このリポジトリではPerlを利用しています。
 
 
 ## 機能
@@ -35,13 +36,15 @@ True! 2
 
 # English
 
-## (a == 1 && a == 2 && a == 3) を常に真にできますか？
+## Can (a == 1 && a == 2 && a == 3) ever evaluate to true?
 
 It is a game of how to make things that seemingly impossible to be successful.
 
 For the original story please refer to the following site.
 
 https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true
+
+The target for original story is Javascript, but for this ripository is Perl.
 
 
 
