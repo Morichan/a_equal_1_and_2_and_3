@@ -23,7 +23,7 @@ use strict;
 use warnings;
 
 change_sigil();
-all_equal_object();
+overload_operator();
 
 sub change_sigil {
 
@@ -31,17 +31,17 @@ sub change_sigil {
     my @a = (1, 2);
     sub a { 3 };
 
-    if ($a == 1 and @a == 2 and &a == 3) {
-        print "True by changing Sigil!\n";
+    if ($a == 1 && @a == 2 && &a == 3) {
+        print "True by changing the Sigil!\n";
     }
 }
 
-sub all_equal_object {
+sub overload_operator {
 
     my $a = AllEqualObject->new;
 
     if ($a == 1 && $a == 2 && $a == 3) {
-        print "True by overloading operator!\n";
+        print "True by overloading an operator!\n";
     }
 }
 

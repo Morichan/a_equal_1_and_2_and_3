@@ -28,8 +28,8 @@ https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-tr
 
 ```
 $ perl a_equal_1_and_2_and_3.pl
-True by changing Sigil!
-True by overloading operator!
+True by changing the Sigil!
+True by overloading an operator!
 ```
 
 
@@ -63,7 +63,7 @@ Make all true / false judgments true.
 $ git clone https://github.com/Morichan/a_equal_1_and_2_and_3
 $ cd ./a_equal_1_and_2_and_3
 $ perl a_equal_1_and_2_and_3.pl
-True by changing Sigil!
-True by overloading operator!
+True by changing the Sigil!
+True by overloading an operator!
 ```
 
