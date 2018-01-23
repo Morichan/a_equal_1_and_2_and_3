@@ -13,17 +13,9 @@ sub operator_eq {
     return 1;
 }
 
-1;
 
 
-
-package main;
-
-use strict;
-use warnings;
-
-change_sigil();
-overload_operator();
+package ChangingSigil;
 
 sub change_sigil {
 
@@ -36,6 +28,10 @@ sub change_sigil {
     }
 }
 
+
+
+package OverloadingOperator;
+
 sub overload_operator {
 
     my $a = AllEqualObject->new;
@@ -44,4 +40,31 @@ sub overload_operator {
         print "True by overloading an operator!\n";
     }
 }
+
+
+
+package DoFunction;
+
+sub do_function {
+    $count = 0;
+
+    if (a == 1 && a == 2 && a == 3) {
+        print "True by doing a function!\n";
+    }
+
+    sub a {
+        $count = $count > 2 ? 1 : $count + 1;
+    }
+}
+
+
+
+package main;
+
+use strict;
+use warnings;
+
+ChangingSigil->change_sigil();
+OverloadingOperator->overload_operator();
+DoFunction->do_function();
 
