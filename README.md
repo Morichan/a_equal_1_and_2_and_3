@@ -4,7 +4,7 @@ Please go to English Section if you don't read Japanese.
 
 
 
-## (a == 1 && a == 2 && a == 3) を常に真にできますか？
+## `(a == 1 && a == 2 && a == 3)` を常に真にできますか？
 
 一見不可能そうなものを、如何にして成功させるかという遊びです。
 
@@ -15,28 +15,38 @@ https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-tr
 元ネタではJavascriptが対象ですが、このリポジトリではPerlを利用しています。
 
 
+
 ## 機能
 
 全ての真偽値判定を真にします。
 
 * シジルの変更によって
 * `"=="` 演算子のオーバーロードによって
+* 関数の利用によって
 
 
 
 ## 使い方
 
-```
-$ perl a_equal_1_and_2_and_3.pl
-True by changing the Sigil!
-True by overloading an operator!
+```bash:command
+$ git clone https://github.com/Morichan/a_equal_1_and_2_and_3
+$ cd ./a_equal_1_and_2_and_3
+
+$ perl change_sigil.pl
+True!
+
+$ perl overload_operator.pl
+True!
+
+$ perl do_function.pl
+True!
 ```
 
 
 
 # English
 
-## Can (a == 1 && a == 2 && a == 3) ever evaluate to true?
+## Can `(a == 1 && a == 2 && a == 3)` ever evaluate to true?
 
 It is a game of how to make things that seemingly impossible to be successful.
 
@@ -54,16 +64,23 @@ Make all true / false judgments true.
 
 * By changing Sigil
 * By overloading operator
+* By doing function
 
 
 
 ## Usage
 
-```
+```bash:command
 $ git clone https://github.com/Morichan/a_equal_1_and_2_and_3
 $ cd ./a_equal_1_and_2_and_3
-$ perl a_equal_1_and_2_and_3.pl
-True by changing the Sigil!
-True by overloading an operator!
+
+$ perl change_sigil.pl
+True!
+
+$ perl overload_operator.pl
+True!
+
+$ perl do_function.pl
+True!
 ```
 
